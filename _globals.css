@@ -1,0 +1,21 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;    
+}

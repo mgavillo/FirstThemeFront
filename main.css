@@ -1,0 +1,217 @@
+@import "./_globals.css";
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+}
+
+body{
+    background-color: hsl(218, 28%, 13%);
+}
+
+header{
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    padding-left: 50px;
+}
+
+.box-intro{
+    background-color: hsl(217, 28%, 15%);
+    background-image: url("./images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.text-container{
+    margin: 0 30% 0 30%;
+    padding: 0 0 200px 0;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 32px;
+    color: #FFF;
+    cursor: pointer;    
+}
+
+.text-container button{
+    padding: 20px 92px;
+    background: linear-gradient(90deg, rgb(101, 226, 217) 0%, rgb(51, 158, 204) 100%);
+    font-size: 18px;
+}
+
+.box-grid{
+
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 30% 0 30%;
+
+}
+
+.item{
+    width: 36%;
+    align-content: center;
+    padding:0% 7% 0 7%;
+}
+
+
+.box-productive{
+    display: flex;
+    padding: 200px 150px 0 150px;
+    align-items: center;
+}
+
+.box-productive > *{
+    width: 50%;
+    padding: 0 30px 0 30px;
+}
+
+.box-productive a{
+    color: hsl(176, 68%, 64%);
+}
+
+.box-productive span{
+    display: block;
+    width : 165px;
+    height: 2px;
+    background-color:hsl(176, 68%, 64%);
+}
+
+.text h1{
+    padding: 0 50% 0 0;
+}
+
+.box-post{
+    margin: 0 150px 200px 150px;
+    display: flex;
+}
+
+.quote-logo img{
+    width: 90px;
+    height: auto;
+    margin: 110px 150px -20px 170px;
+}
+
+.posts{
+    box-sizing: border-box;
+    box-shadow: hsl(218, 28%, 13%);
+    margin: 0 40px;
+    background-color: hsl(219, 30%, 18%);
+    width: 33%;  
+    border: 30px solid hsl(219, 30%, 18%);
+    border-radius: 10px;
+}
+
+.profile{
+    align-items: center;
+    display: flex;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-text{
+    margin: 0 0 0 30px;
+    line-height: 20px;
+
+}
+
+.box-subscribe{
+    display: inline-block;
+    z-index: 2;  
+    margin: 0 30% 0 30%;
+    padding: 0 30px 0 30px;
+    background-color: hsl(219, 30%, 18%);
+    text-align: center;
+}
+
+.form input{
+    width: 60%;
+    height: 40px;
+    border-radius: 32px;
+    margin: 0 15px 0 0;
+    padding: 0 0 0 25px;
+}
+
+.form button{
+    width: 25%;
+    height: 40px;
+    mix-blend-mode: screen;
+    background: rgb(101, 226, 217);
+    background: rgb(51, 158, 204);
+    border-radius: 32px;
+    margin: 0 0 30px 0;
+}
+
+.footer-box{
+    z-index: -1;
+    background-color: hsl(216, 53%, 9%);
+    margin: -100px 0 0 0;
+}
+
+.footer-logo{
+    margin: 200px 150px 0 150px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction:row;
+    margin: 0 150px 0 150px;
+}
+
+.footer-content img{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 20px 15px 0 0;
+}
+
+.footer-content > *{
+    margin: 0 20px 0 0;
+}
+
+.first-footer{
+    display: flex;
+    width: 30%;
+    align-self: flex-start;
+    justify-content: flex-start;
+
+}
+
+.contact{
+    width: 20%;
+}
+
+.icon-text{
+    display: flex;
+}
+
+.list-link{
+    line-height: 60px;
+    width: 15%;
+}
