@@ -20,15 +20,21 @@ header{
     box-sizing: border-box;
 }
 
+header a{
+    width: 10%;
+}
+
 header a img {
-    max-width : 100%;
-    min-width: 20%;
-    height: auto;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
 }
 
 nav{
     display: flex;
     align-items: center;
+    width: 40%
+
 }
 
 nav ul{
