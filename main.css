@@ -16,7 +16,7 @@ header{
     background-color: hsl(217, 28%, 15%);
     display: flex;
     justify-content: space-between;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 40px 5% 40px;
     box-sizing: border-box;
 }
 
@@ -45,24 +45,21 @@ nav a{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-}
-
-.text-container{
     padding: 0 0 10% 0;
     text-align: center;
 }
 
-.text-container p{
+.box-intro p{
     margin: 0 30% 2% 30%;
 }
 
-.text-container img{
+.box-intro img{
     margin: 0% 25% 2% 25%;
     width: auto;
     height: auto;
 }
 
-.text-container h1{
+.box-intro h1{
     margin: 0% 20% 2% 20%;
 
 }
@@ -99,21 +96,6 @@ button {
 .item{
     width: 36%;
     padding: 0% 7% 0 7%;
-}
-
-@media screen and (max-width: 1000px) {
-    .box-grid{
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: wrap;
-    
-    }
-
-    .item{
-        width: 60%;
-        padding: 0 20% 10% 20%;
-
-    }
 }
 
 .box-productive{
@@ -161,25 +143,6 @@ button {
     width: 33%;  
     border: 30px solid hsl(219, 30%, 18%);
     border-radius: 10px;
-}
-
-@media screen and (max-width: 1000px) {
-    .box-post{
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: wrap;
-    
-    }
-
-    .quote-logo img{
-        margin: 10% 5% -2% 24%;
-    }
-
-    .posts{
-        width: 60%;
-        margin: 0 20% 20% 20%;
-
-    }
 }
 
 .profile{
@@ -230,27 +193,6 @@ form button{
     background: rgb(51, 158, 204);
     border-radius: 32px;
     margin: 0 0 30px 0;
-}
-
-@media screen and (max-width: 1000px) {
-    form{
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    form input {
-        padding: 0 0 0 5%;
-        margin: 0 0 3% 0;
-        width: 85%;
-    }
-
-    form button{
-        padding: 0;
-        margin: 0 0 3% 0;
-        width: 90%;
-    }
-
 }
 
 .footer-box{
@@ -304,6 +246,59 @@ form button{
 }
 
 @media screen and (max-width: 1000px) {
+
+    main .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe > *{
+        width: 80%;
+        height:auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    main .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe{
+        flex-direction: column;
+        padding: 0 10% 0 10%;
+        margin:0;
+    }
+    .item{
+        width: 100%;
+        height:auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-productive > *{
+        width: 100%;
+        height:auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .text{
+        width:100;
+        height: auto;
+    }
+
+    .quote-logo img{
+        width: 7%;
+        margin: 10% 5% -3% 10%;
+    }
+
+    .posts{
+        width: 100%;
+    }
+
+    form input {
+        padding: 0 0 0 5%;
+        margin: 0 0 3% 0;
+        width: 85%;
+    }
+
+    form button{
+        padding: 0;
+        margin: 0 0 3% 0;
+        width: 90%;
+    }
+
     .footer-content{
         flex-direction: column;
         flex-wrap: wrap;
