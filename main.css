@@ -72,7 +72,7 @@ button {
     cursor: pointer;    
 }
 
-.text-container button{
+.box-intro button{
     padding: 20px 92px;
     background: linear-gradient(90deg, rgb(101, 226, 217) 0%, rgb(51, 158, 204) 100%);
     font-size: 18px;
@@ -247,44 +247,63 @@ form button{
 
 @media screen and (max-width: 1000px) {
 
-    main .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe > *{
+    .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe > *{
         width: 80%;
         height:auto;
         padding: 0;
         margin: 0;
     }
 
-    main .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe{
+    .box-intro,.box-grid,.box-productive,.box-post,.box-subscribe{
         flex-direction: column;
         padding: 0 10% 0 10%;
         margin:0;
     }
-    .item{
+
+    .box-intro > :not(button){
         width: 100%;
         height:auto;
         padding: 0;
         margin: 0;
     }
 
-    .box-productive > *{
+    .box-grid > :not(nothing){
         width: 100%;
         height:auto;
         padding: 0;
         margin: 0;
     }
 
-    .text{
-        width:100;
+    .box-productive > :not(nothing){
+        width: 100%;
         height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .text >:not(nothing){
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-post > :not(nothing){
+        width: 100%;
+        height:auto;
+        padding: 0;
+        margin: 0;
+    }
+    .box-subscribe > :not(nothing){
+        width: 100%;
+        height:auto;
+        padding: 0;
+        margin: 0;
     }
 
     .quote-logo img{
         width: 7%;
         margin: 10% 5% -3% 10%;
-    }
-
-    .posts{
-        width: 100%;
     }
 
     form input {
@@ -304,7 +323,6 @@ form button{
         flex-wrap: wrap;
     
     }
-
     .footer-content > *{
         width: 70%;
         margin: 0 10% 10% 10%;
