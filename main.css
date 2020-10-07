@@ -20,26 +20,23 @@ header{
     box-sizing: border-box;
 }
 
-header a{
-    width: 10%;
-}
-
-header a img {
-    width: 100%;
+.first-logo {
+    width: 90%;
     display: inline-block;
     overflow: hidden;
 }
 
 nav{
     display: flex;
-    align-items: center;
-    width: 40%;
-
+    text-align: right;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 nav a{
-    width: 30%;
-    margin: 0 15% 0 0;
+    display: block;
+    width: auto;
+    margin: 0 10px 0 0;
 }
 
 .box-intro{
