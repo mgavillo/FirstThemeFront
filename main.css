@@ -20,6 +20,11 @@ header{
     box-sizing: border-box;
 }
 
+header a img {
+    max-width : 100%;
+    height: auto;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -51,8 +56,9 @@ nav ul li {
 }
 
 .text-container img{
-    margin: 0% 30% 2% 30%;
+    margin: 0% 25% 2% 25%;
     width: auto;
+    height: auto;
 }
 
 .text-container h1{
@@ -91,7 +97,7 @@ button {
 
 .item{
     width: 36%;
-    padding:0% 7% 0 7%;
+    padding: 0% 7% 0 7%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -115,6 +121,9 @@ button {
     align-items: center;
 }
 
+.box-productive > *{
+    width: 50%;
+}
 .text{
     margin: 0 0 0 5%;
 }
@@ -138,15 +147,15 @@ button {
 }
 
 .quote-logo img{
-    width: 90px;
+    width: 6%;
     height: auto;
-    margin: 110px 150px -20px 170px;
+    margin: 10% 5% -2% 10%;
 }
 
 .posts{
     box-sizing: border-box;
     box-shadow: hsl(218, 28%, 13%);
-    margin: 0 40px;
+    margin: 0 1.5%;
     background-color: hsl(219, 30%, 18%);
     width: 33%;  
     border: 30px solid hsl(219, 30%, 18%);
@@ -159,6 +168,10 @@ button {
         text-align: center;
         flex-wrap: wrap;
     
+    }
+
+    .quote-logo img{
+        margin: 10% 5% -2% 24%;
     }
 
     .posts{
