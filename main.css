@@ -16,7 +16,7 @@ header{
     background-color: hsl(217, 28%, 15%);
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 5% 10% 5% 10%;
     box-sizing: border-box;
 }
 
@@ -37,14 +37,22 @@ nav ul li {
     background-color: hsl(217, 28%, 15%);
     background-image: url("./images/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: contain;
+    background-position: bottom;
 }
 
 .text-container{
-    margin: 0 30% 0 30%;
-    padding: 0 0 200px 0;
+    padding: 0 0 10% 0;
     text-align: center;
+}
+
+.text-container > *{
+    margin: 0 30% 2% 30%;
+}
+
+.text-container img{
+    margin: 0 20% 0 20%;
+    width: auto;
 }
 
 button {
@@ -62,13 +70,15 @@ button {
 }
 
 .box-grid{
-
     display: flex;
+    flex-direction: row;
     text-align: center;
     flex-wrap: wrap;
     padding: 0 30% 0 30%;
 
 }
+
+
 
 .item{
     width: 36%;
@@ -76,10 +86,24 @@ button {
     padding:0% 7% 0 7%;
 }
 
+@media screen and (max-width: 1000px) {
+    .box-grid{
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+
+    .item{
+        width: 60%;
+        padding: 0 20% 10% 20%;
+
+    }
+}
 
 .box-productive{
     display: flex;
-    padding: 200px 150px 0 150px;
+    padding: 200px 10% 0 10%;
     align-items: center;
 }
 
@@ -104,8 +128,9 @@ button {
 }
 
 .box-post{
-    margin: 0 150px 200px 150px;
+    margin: 0 10% 200px 10%;
     display: flex;
+    flex-direction: row;
 }
 
 .quote-logo img{
@@ -122,6 +147,21 @@ button {
     width: 33%;  
     border: 30px solid hsl(219, 30%, 18%);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .box-post{
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+
+    .posts{
+        width: 60%;
+        margin: 0 20% 20% 20%;
+
+    }
 }
 
 .profile{
@@ -175,14 +215,16 @@ button {
 }
 
 .footer-logo{
-    margin: 200px 150px 0 150px;
+    margin: 200px 10% 0 10%;
 }
 
 .footer-content{
     display: flex;
     flex-direction:row;
-    margin: 0 150px 0 150px;
+    margin: 0 10% 0 10%;
 }
+
+
 
 .footer-content img{
     display: block;
@@ -214,4 +256,18 @@ button {
 .list-link{
     line-height: 60px;
     width: 15%;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+
+    .footer-content > *{
+        width: 70%;
+        margin: 0 10% 10% 10%;
+    }
+
 }
