@@ -166,7 +166,7 @@ button {
     display: inline-block;
     z-index: 2;  
     margin: 0 30% 0 30%;
-    padding: 0 30px 0 30px;
+    padding: 3%;
     background-color: hsl(219, 30%, 18%);
     text-align: center;
     border-radius: 10px;
@@ -178,10 +178,10 @@ form{
 }
 
 form input{
+    border: none;
     width: 60%;
     height: 40px;
     border-radius: 32px;
-    margin: 0 15px 0 0;
     padding: 0 0 0 25px;
 }
 
@@ -192,7 +192,6 @@ form button{
     background: rgb(101, 226, 217);
     background: rgb(51, 158, 204);
     border-radius: 32px;
-    margin: 0 0 30px 0;
 }
 
 .footer-box{
@@ -211,8 +210,6 @@ form button{
     margin: 0 10% 0 10%;
 }
 
-
-
 .footer-content img{
     display: block;
     width: 25px;
@@ -221,7 +218,7 @@ form button{
 }
 
 .footer-content > *{
-    margin: 0 20px 0 0;
+    margin: 0 5% 0 0;
 }
 
 .first-footer{
@@ -260,7 +257,7 @@ form button{
 
     .box-subscribe{
         flex-direction: column;
-        padding: 0;
+        padding: 5%;
         margin: 0 10% 0 10%;
     }
 
@@ -277,12 +274,12 @@ form button{
 
     .quote-logo img{
         width: 7%;
-        margin: 10% 5% -3% 15%;
+        margin: 10% 5% -3% 13%;
     }
 
     form input {
         padding: 0 0 0 5%;
-        margin: 0 0 3% 0;
+        margin: 0 3% 3% 0;
         width: 85%;
     }
 
@@ -295,11 +292,14 @@ form button{
     .footer-content{
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 0 10% 10% 10%;
+        padding:0;
     
     }
-    .footer-content > *{
-        width: 70%;
-        margin: 0 10% 10% 10%;
+    .footer-content > :not(nothing){
+        width: 100%;
+        margin: 0 0 10% 0;
+        padding: 0;
     }
 
 }
